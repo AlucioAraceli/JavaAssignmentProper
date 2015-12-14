@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+#header {
+    background-color:navy;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#bord1 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#bord2 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:right;
+    padding:5px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:navy;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;
+}
+</style>
+</head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<script type="text/javascript" src="javaassignment2.js"> </script>
+<body>
+
+<div id="header">
+<h1>Literal Word Calculator</h1>
+</div>
+
+<div id="bord1">
+</div>
+
+<div id="bord2">
+</div>
+
+<div id="section">
+<h2>Instructions</h2>
+<p>Manually clear "Input" and then, enter in two of the following: one, two, three, four, five. Anything above five, or below one will be rejected, same with using numbers. Please press add, subtract, divide or multiply twice to load your answer. NaN appears the first time.</p>
+<br>
+<table style="width:100%">
+  <tr>
+    <td><input type="text" id="numOne" value="Input" size="10"> </td>
+    <td><input type="text" id="numTwo" value="Input" size="10"> </td>
+    <td><textarea id="console" name="console" size="10">Results</textarea></td>
+  </tr>
+  <tr>
+  <td>
+	<input type="button" onclick="add(numIntOne, numIntTwo)" value="add"/>
+	<input type="button" onclick="sub(numIntOne, numIntTwo)" value="Subtract"/>
+	<input type="button" onclick="mult(numIntOne, numIntTwo)" value="Multiply"/>
+	<input type="button" onclick="div(numIntOne, numIntTwo)" value="Divide"/>
+	</td>
+</tr>
+</table>
+</br>
+<p> Did you enjoy my calculator? I hope you did!</p>
+</div>
+
+<div id="footer">
+Made by Alex Agostinho
+</div>
+
+</body>
+</html>
